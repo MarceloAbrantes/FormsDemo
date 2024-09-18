@@ -1,0 +1,10 @@
+C:\Users\marce\Desktop\FormsDemo\DemoWinForms\DemoWinForms\bin\Debug\DemoWinForms.exe.config
+C:\Users\marce\Desktop\FormsDemo\DemoWinForms\DemoWinForms\bin\Debug\DemoWinForms.exe
+C:\Users\marce\Desktop\FormsDemo\DemoWinForms\DemoWinForms\bin\Debug\DemoWinForms.pdb
+C:\Users\marce\Desktop\FormsDemo\DemoWinForms\DemoWinForms\obj\Debug\DemoWinForms.csproj.AssemblyReference.cache
+C:\Users\marce\Desktop\FormsDemo\DemoWinForms\DemoWinForms\obj\Debug\DemoWinForms.Properties.Resources.resources
+C:\Users\marce\Desktop\FormsDemo\DemoWinForms\DemoWinForms\obj\Debug\DemoWinForms.csproj.GenerateResource.cache
+C:\Users\marce\Desktop\FormsDemo\DemoWinForms\DemoWinForms\obj\Debug\DemoWinForms.csproj.CoreCompileInputs.cache
+C:\Users\marce\Desktop\FormsDemo\DemoWinForms\DemoWinForms\obj\Debug\DemoWinForms.exe
+C:\Users\marce\Desktop\FormsDemo\DemoWinForms\DemoWinForms\obj\Debug\DemoWinForms.pdb
+C:\Users\marce\Desktop\FormsDemo\DemoWinForms\DemoWinForms\obj\Debug\DemoWinForms.Main.resources
