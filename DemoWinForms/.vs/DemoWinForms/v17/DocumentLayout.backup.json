@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{E8A8FF48-2E31-4F6E-A46A-494DEF808D72}|DemoWinForms\\DemoWinForms.csproj|solutionrelative:demowinforms\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8A8FF48-2E31-4F6E-A46A-494DEF808D72}|DemoWinForms\\DemoWinForms.csproj|C:\\Users\\marce\\Desktop\\FormsDemo\\DemoWinForms\\demowinforms\\main.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8A8FF48-2E31-4F6E-A46A-494DEF808D72}|DemoWinForms\\DemoWinForms.csproj|solutionrelative:demowinforms\\main.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E8A8FF48-2E31-4F6E-A46A-494DEF808D72}|DemoWinForms\\DemoWinForms.csproj|C:\\Users\\marce\\Desktop\\FormsDemo\\DemoWinForms\\demowinforms\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E8A8FF48-2E31-4F6E-A46A-494DEF808D72}|DemoWinForms\\DemoWinForms.csproj|solutionrelative:demowinforms\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8A8FF48-2E31-4F6E-A46A-494DEF808D72}|DemoWinForms\\DemoWinForms.csproj|C:\\Users\\marce\\Desktop\\FormsDemo\\DemoWinForms\\demowinforms\\main.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8A8FF48-2E31-4F6E-A46A-494DEF808D72}|DemoWinForms\\DemoWinForms.csproj|solutionrelative:demowinforms\\main.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,11 +22,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             },
             {
               "$type": "Document",
@@ -42,19 +46,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Main.cs",
               "DocumentMoniker": "C:\\Users\\marce\\Desktop\\FormsDemo\\DemoWinForms\\DemoWinForms\\Main.cs",
               "RelativeDocumentMoniker": "DemoWinForms\\Main.cs",
               "ToolTip": "C:\\Users\\marce\\Desktop\\FormsDemo\\DemoWinForms\\DemoWinForms\\Main.cs",
               "RelativeToolTip": "DemoWinForms\\Main.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAA3wD0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAiwBUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T05:49:25.169Z"
+              "WhenOpened": "2024-09-17T05:49:25.169Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Main.Designer.cs",
               "DocumentMoniker": "C:\\Users\\marce\\Desktop\\FormsDemo\\DemoWinForms\\DemoWinForms\\Main.Designer.cs",
               "RelativeDocumentMoniker": "DemoWinForms\\Main.Designer.cs",

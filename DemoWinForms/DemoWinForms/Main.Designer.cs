@@ -30,14 +30,16 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.txt_nome = new System.Windows.Forms.TextBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.listBox3 = new System.Windows.Forms.ListBox();
-            this.listBox4 = new System.Windows.Forms.ListBox();
+            this.contexto = new System.Windows.Forms.ListBox();
+            this.memoryDump = new System.Windows.Forms.ListBox();
+            this.stackDump = new System.Windows.Forms.ListBox();
             this.tabs = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.textBoxResponse = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabs.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -57,31 +59,34 @@
             this.txt_nome.Size = new System.Drawing.Size(724, 20);
             this.txt_nome.TabIndex = 1;
             this.txt_nome.Text = "Digite Aqui";
+            this.txt_nome.Click += new System.EventHandler(this.txt_nome_Click);
             this.txt_nome.TextChanged += new System.EventHandler(this.txt_nome_TextChanged);
+            this.txt_nome.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_nome_KeyDown);
             // 
-            // listBox1
+            // contexto
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(594, 27);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(205, 212);
-            this.listBox1.TabIndex = 5;
+            this.contexto.FormattingEnabled = true;
+            this.contexto.Location = new System.Drawing.Point(594, 27);
+            this.contexto.Name = "contexto";
+            this.contexto.Size = new System.Drawing.Size(205, 212);
+            this.contexto.TabIndex = 5;
             // 
-            // listBox3
+            // memoryDump
             // 
-            this.listBox3.FormattingEnabled = true;
-            this.listBox3.Location = new System.Drawing.Point(12, 311);
-            this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(576, 95);
-            this.listBox3.TabIndex = 5;
+            this.memoryDump.FormattingEnabled = true;
+            this.memoryDump.Location = new System.Drawing.Point(12, 311);
+            this.memoryDump.Name = "memoryDump";
+            this.memoryDump.Size = new System.Drawing.Size(576, 95);
+            this.memoryDump.TabIndex = 5;
+            this.memoryDump.SelectedIndexChanged += new System.EventHandler(this.memoryDump_SelectedIndexChanged);
             // 
-            // listBox4
+            // stackDump
             // 
-            this.listBox4.FormattingEnabled = true;
-            this.listBox4.Location = new System.Drawing.Point(594, 246);
-            this.listBox4.Name = "listBox4";
-            this.listBox4.Size = new System.Drawing.Size(205, 160);
-            this.listBox4.TabIndex = 7;
+            this.stackDump.FormattingEnabled = true;
+            this.stackDump.Location = new System.Drawing.Point(594, 246);
+            this.stackDump.Name = "stackDump";
+            this.stackDump.Size = new System.Drawing.Size(205, 160);
+            this.stackDump.TabIndex = 7;
             // 
             // tabs
             // 
@@ -97,6 +102,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.textBoxResponse);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -104,13 +110,25 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Dissasembler";
             this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // textBoxResponse
+            // 
+            this.textBoxResponse.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.textBoxResponse.Location = new System.Drawing.Point(-4, 0);
+            this.textBoxResponse.Multiline = true;
+            this.textBoxResponse.Name = "textBoxResponse";
+            this.textBoxResponse.ReadOnly = true;
+            this.textBoxResponse.Size = new System.Drawing.Size(576, 271);
+            this.textBoxResponse.TabIndex = 0;
+            this.textBoxResponse.TextChanged += new System.EventHandler(this.textBox1_TextChanged_2);
             // 
             // tabPage2
             // 
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(568, 252);
+            this.tabPage2.Size = new System.Drawing.Size(568, 267);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Log";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -120,7 +138,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(568, 252);
+            this.tabPage3.Size = new System.Drawing.Size(568, 267);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Notes";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -131,15 +149,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(805, 449);
             this.Controls.Add(this.tabs);
-            this.Controls.Add(this.listBox4);
-            this.Controls.Add(this.listBox3);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.stackDump);
+            this.Controls.Add(this.memoryDump);
+            this.Controls.Add(this.contexto);
             this.Controls.Add(this.txt_nome);
             this.Controls.Add(this.label1);
             this.Name = "Main";
             this.Text = "Debugger";
             this.Load += new System.EventHandler(this.Main_Load);
             this.tabs.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -149,13 +169,14 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_nome;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.ListBox listBox3;
-        private System.Windows.Forms.ListBox listBox4;
+        private System.Windows.Forms.ListBox contexto;
+        private System.Windows.Forms.ListBox memoryDump;
+        private System.Windows.Forms.ListBox stackDump;
         private System.Windows.Forms.TabControl tabs;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TextBox textBoxResponse;
     }
 }
 
